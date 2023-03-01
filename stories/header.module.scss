@@ -1,0 +1,54 @@
+@import '../src/scss/config';
+
+.right-component {
+  display: flex;
+  flex-direction: row;
+  gap: 21px;
+  align-items: center;
+  .help-button {
+    display: flex;
+    flex-direction: row;
+    gap: 4.6px;
+    @extend %all-center;
+    background-color: $bg-color;
+    outline: none;
+    border: none;
+    p {
+      @extend %semi14p;
+      color: $icon;
+    }
+  }
+  .help-button:focus {
+    background-color: $bg-color;
+  }
+  .help-button:active {
+    background-color: $bg-color;
+  }
+  .ddn-toggle {
+    @extend %row-start;
+  }
+}
+
+.header {
+  background-color: $icon-bg-color;
+}
+
+// .left {
+//   border: 1px solid red;
+// }
+
+// .right {
+//   border: 1px solid yellow;
+// }
+
+// .logo {
+//   width: 50px;
+// }
+
+// .instLogo {
+//   width: 50px;
+// }
+
+.table-stat {
+  background-color: yellow;
+}

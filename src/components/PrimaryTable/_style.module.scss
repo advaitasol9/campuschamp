@@ -1,0 +1,128 @@
+@import '../../scss/config';
+
+.primaryTable {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 18.79px 20px 20px;
+  background-color: $white;
+
+  .table {
+    width: 100%;
+    border-radius: 5px;
+
+    .body {
+      display: flex;
+      flex-direction: column;
+
+      table {
+        thead {
+          border-radius: 5px;
+          border-bottom: none;
+          tr {
+            // display: flex;
+            flex-direction: row;
+            background-color: $bg-color;
+            height: 50px;
+            th {
+              // @extend %row-start;
+              // flex-direction: row;
+              text-align: start;
+              @extend %semi14p;
+              color: $dark-text;
+              margin: 0px;
+
+              .column-header {
+                @extend %row-start;
+                flex-direction: row;
+                .column-header-sort {
+                  @extend %row-start;
+                  flex-direction: column;
+                  margin-left: 2px;
+                }
+              }
+              .cursor-pointer {
+                cursor: pointer;
+              }
+            }
+          }
+        }
+
+        tbody {
+          .selected-row {
+            background-color: #f3f3f3;
+          }
+          tr {
+            flex-direction: row;
+            height: 51px;
+            border-bottom: 1px solid $gray;
+
+            td {
+              @extend %reg14p;
+              color: $dark-text;
+            }
+          }
+        }
+      }
+    }
+  }
+  .pagination {
+    @extend %row-between;
+    width: 100%;
+    flex-direction: row;
+    margin-top: 20px;
+
+    .currentAndTotalPage {
+      @extend %reg12p;
+      color: $dark-text;
+    }
+    .selectPage {
+      // column-gap: 13px;
+      @extend %row-start;
+      flex-direction: row;
+
+      .button {
+        background-color: transparent;
+        border-style: none;
+        .nextPrev {
+          @extend %row-start;
+          flex-direction: row;
+          column-gap: 14px;
+        }
+      }
+
+      .selectedPageIdx {
+        width: 23px;
+        height: 23px;
+        border-radius: 2px;
+        display: flex;
+        flex-direction: column;
+        @extend %all-center;
+        background-color: $green;
+        border-style: none;
+        p {
+          @extend %semi14p;
+          color: $white;
+        }
+      }
+
+      .pageIdx {
+        width: 10px;
+        height: 23px;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        border-style: none;
+        @extend %all-center;
+        p {
+          @extend %reg14p;
+          color: $dark-text;
+        }
+      }
+
+      p {
+        @extend %reg14p;
+        color: $dark-text;
+      }
+    }
+  }
+}

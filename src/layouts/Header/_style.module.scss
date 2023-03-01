@@ -1,0 +1,63 @@
+@import '../../scss/config';
+
+.header {
+  width: 100%;
+  @extend %row-between;
+  background-color: $dark-bg;
+  box-sizing: border-box;
+
+  .leftRow {
+    @extend %row-start;
+    gap: 25px;
+
+    .logo {
+      width: 145px;
+      height: 61px;
+    }
+    .instLogo {
+      height: 60px;
+    }
+    .input-with-icon {
+      width: 314px;
+      height: 42px;
+    }
+  }
+
+  .rightRow {
+    @extend %row-between;
+    gap: 25px;
+
+    .ddnToggle {
+      display: flex;
+      flex-direction: row;
+      @extend %row-start;
+      color: $white;
+
+      .avatar {
+        div {
+          p {
+            color: $dark-text;
+          }
+        }
+        p {
+          color: $white;
+        }
+      }
+    }
+
+    .ddnMenu {
+      z-index: 20;
+    }
+
+    .notif {
+      position: relative;
+      .notifBadge {
+        position: absolute;
+        height: 11px;
+        width: 11 px;
+        top: -50%;
+        right: -50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+@import '../../scss/config';
+
+.filters {
+  display: inline-block;
+  flex-direction: column;
+  padding: 19px 17px;
+  background-color: $bg-color;
+  border-radius: 7px;
+  min-width: 212px;
+
+  .head {
+    @extend %row-between;
+    flex-direction: row;
+    margin-bottom: 18px;
+
+    p {
+      @extend %semi18p;
+      color: $dark-text;
+      margin: 0;
+    }
+    div {
+      display: flex;
+      @extend %all-center;
+      height: 20px;
+      width: 20px;
+      border: 2px solid $blue;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .filterRow {
+      @extend %row-between;
+      @extend %reg14p;
+      color: $dark-text;
+
+      .select-input {
+        width: 80%;
+        input {
+          height: 16px;
+          width: 16px;
+        }
+        label {
+          margin-left: 4px;
+        }
+      }
+
+      p {
+        @extend %reg14p;
+        color: $dark-text;
+        margin: 0;
+        width: 20px;
+        text-align: center;
+      }
+    }
+  }
+
+  .view-more {
+    @extend %row-start;
+    gap: 2.5px;
+    margin-top: 15px;
+    cursor: pointer;
+    p {
+      @extend %semi14p;
+      color: $blue;
+    }
+  }
+}

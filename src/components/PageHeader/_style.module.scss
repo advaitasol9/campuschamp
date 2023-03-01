@@ -1,0 +1,14 @@
+@import '../../scss/config';
+
+.page-header {
+  @extend %row-start;
+  gap: 5px;
+  margin-bottom: 15.5px;
+  .icon {
+    cursor: pointer;
+  }
+  p {
+    @extend %semi20p;
+    color: $dark-text;
+  }
+}

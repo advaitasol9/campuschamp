@@ -1,0 +1,38 @@
+@import '../../scss/config';
+
+.table-stat {
+  border-radius: 5px;
+  height: 84.29px;
+  width: 321px;
+  @extend %row-start;
+  background-color: $blue;
+
+  .fg {
+    @extend %row-start;
+    padding: 0px 31.66px;
+    gap: 19px;
+    .left {
+      display: flex;
+      @extend %all-center;
+      height: 54px;
+      width: 54px;
+      border-radius: 10px;
+      background-color: $icon-bg-color;
+
+      img {
+        height: 30px;
+        width: 30px;
+      }
+    }
+    .right {
+      .count {
+        @extend %semi24p;
+        color: $white;
+      }
+      .title {
+        @extend %reg16p;
+        color: $white;
+      }
+    }
+  }
+}

@@ -1,0 +1,166 @@
+$dark-bg: #182941;
+$dark-text: #0e284e;
+$blue: #339dff;
+$white: #ffffff;
+$light-text: #97a4b8;
+$line-Color: #a3b4c1;
+$green: #4ec963;
+$bg-color: #f4f6f9;
+$icon: #4b5b74;
+$light-text2: #74839a;
+$gray: #ebebeb;
+$icon-bg-color: #ebf6ff;
+
+p {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+// @font-face {
+//   // font-family: 'InterRegular';
+//   src: url('../assets/fonts/Inter-Regular.ttf');
+// }
+
+// @font-face {
+//   // font-family: 'InterMedium';
+//   src: url('../assets/fonts/Inter-Medium.ttf');
+// }
+
+// @font-face {
+//   // font-family: 'InterSemiBold';
+//   src: url('../assets/fonts/Inter-SemiBold.ttf');
+// }
+
+// @font-face {
+//   // font-family: 'InterBold';
+//   src: url('../assets/fonts/Inter-Bold.ttf');
+// }
+
+// @font-face {
+//   // font-family: 'PoppinsRegular';
+//   src: url('../assets/fonts/Poppins-Regular.ttf');
+// }
+
+%reg12p {
+  // font-family: 'InterRegular';
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+%reg14p {
+  // font-family: 'InterRegular';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+%semi14p {
+  // font-family: 'InterSemiBold';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+%bold14p {
+  // font-family: 'InterBold';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+%reg16p {
+  // font-family: 'InterRegular';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+%med16p {
+  // font-family: 'InterMedium';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+%semi16p {
+  // font-family: 'InterSemiBold';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+%reg17p {
+  // font-family: 'PoppinsRegular';
+  font-style: normal;
+  font-size: 17px;
+  line-height: 26px;
+}
+
+%reg18p {
+  // font-family: 'InterRegular';
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+%semi18p {
+  // font-family: 'InterSemiBold';
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+%reg20p {
+  // font-family: 'InterRegular';
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+%semi20p {
+  // font-family: 'InterSemiBold';
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+}
+%bold20p {
+  // font-family: 'InterBold';
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+%semi24p {
+  // font-family: 'InterSemiBold';
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+%semi26p {
+  // font-family: 'InterSemiBold';
+  font-style: normal;
+  font-size: 26px;
+  line-height: 31px;
+}
+
+%row-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+%row-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+%all-center {
+  justify-content: center;
+  align-items: center;
+}

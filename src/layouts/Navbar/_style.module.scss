@@ -1,0 +1,60 @@
+@import '../../scss/config';
+
+.navBar {
+  @extend %row-start;
+  height: 46.41px;
+  width: 100%;
+  background-color: $bg-color;
+  padding: 0 16px;
+  box-sizing: border-box;
+  justify-content: space-evenly;
+
+  .navItem {
+    @extend %row-start;
+    background-color: transparent;
+    color: $dark-text;
+    padding: 0px 13.5px 0px 12px;
+    border-radius: 3px;
+    height: 32px;
+    img {
+      height: 20px;
+      width: 20px;
+      margin-right: 8px;
+    }
+    p {
+      @extend %reg14p;
+      color: $dark-text;
+      text-transform: capitalize;
+    }
+  }
+
+  .childItem {
+    padding: 7px 14px;
+    justify-content: start;
+    color: transparent;
+    img {
+      display: none;
+    }
+    p {
+      @extend %reg14p;
+      color: $dark-text;
+      text-transform: capitalize;
+    }
+  }
+
+  .navItemSelected {
+    background-color: $blue;
+    p {
+      @extend %semi14p;
+      color: $white;
+    }
+  }
+
+  .hidenCaret {
+    color: transparent;
+  }
+}
+
+.custom-toggle {
+  text-decoration: none;
+}

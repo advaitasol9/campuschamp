@@ -81,7 +81,7 @@
   },
   "dependencies": {
     "@tanstack/react-table": "^8.7.4",
-    "appfactory.react.web": "file:../appfactory.react.web",
+    "appfactory.react.web": "github:advaitasol9/appfactory",
     "bootstrap": "^5.2.3",
     "classnames": "^2.3.2",
     "react-bootstrap": "^2.7.0",

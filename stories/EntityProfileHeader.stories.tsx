@@ -1,11 +1,11 @@
 import { Meta, Story } from '@storybook/react';
 import React from 'react';
-import { EntitySummary, EntitySummaryProps } from '../src';
+import { EntityProfileHeader, EntityProfileHeaderProps } from '../src';
 import logo from '../src/assets/img/logo.png';
 
 const meta: Meta = {
-  title: 'EntitySummary',
-  component: EntitySummary,
+  title: 'EntityProfileHeader',
+  component: EntityProfileHeader,
   argTypes: {
     children: {
       control: {
@@ -20,8 +20,8 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<EntitySummaryProps> = (args) => (
-  <EntitySummary {...args} />
+const Template: Story<EntityProfileHeaderProps> = (args) => (
+  <EntityProfileHeader {...args} />
 );
 
 export const Default = Template.bind({});

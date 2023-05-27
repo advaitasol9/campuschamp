@@ -2,15 +2,15 @@ import { Meta, Story } from '@storybook/react';
 import { PrimaryInput } from 'appfactory.react.web';
 import React from 'react';
 import {
-  EntityDetailsWrapper,
-  EntityDetailsWrapperProps,
+  EntityWrapper,
+  EntityWrapperProps,
   EntitySection,
   EntitySectionRow,
 } from '../src';
 
 const meta: Meta = {
-  title: 'EntityDetailsWrapper',
-  component: EntityDetailsWrapper,
+  title: 'EntityWrapper',
+  component: EntityWrapper,
   argTypes: {
     children: {
       control: {
@@ -25,8 +25,8 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<EntityDetailsWrapperProps> = (args) => (
-  <EntityDetailsWrapper {...args} />
+const Template: Story<EntityWrapperProps> = (args) => (
+  <EntityWrapper {...args} />
 );
 
 export const Default = Template.bind({});

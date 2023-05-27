@@ -8,11 +8,11 @@ type detailsType = {
   id?: string;
 };
 
-export interface EntityStaticDetailsProps {
+export interface EntityFormHeaderProps {
   details: detailsType[];
 }
 
-const EntityStaticDetails = ({ details }: EntityStaticDetailsProps) => {
+const EntityFormHeader = ({ details }: EntityFormHeaderProps) => {
   return (
     <div className={classes['entity-static-details']}>
       {details.map((details: detailsType, idx: number) => (
@@ -29,4 +29,4 @@ const EntityStaticDetails = ({ details }: EntityStaticDetailsProps) => {
   );
 };
 
-export default EntityStaticDetails;
+export default EntityFormHeader;

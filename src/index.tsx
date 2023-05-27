@@ -20,9 +20,9 @@ export { default as Dashboard, DashboardProps } from './layouts/Dashboard';
 export { default as Footer, FooterProps } from './layouts/Footer';
 export { default as Header, HeaderProps } from './layouts/Header';
 export {
-  default as EntityDetailsWrapper,
-  EntityDetailsWrapperProps,
-} from './layouts/EntityDetailsWrapper';
+  default as EntityWrapper,
+  EntityWrapperProps,
+} from './layouts/EntityWrapper';
 export {
   default as EntityDynamicSection,
   EntityDynamicSectionProps,
@@ -40,13 +40,13 @@ export {
   EntitySectionRowProps,
 } from './layouts/EntitySectionRow';
 export {
-  default as EntityStaticDetails,
-  EntityStaticDetailsProps,
-} from './layouts/EntityStaticDetails';
+  default as EntityFormHeader,
+  EntityFormHeaderProps,
+} from './layouts/EntityFormHeader';
 export {
-  default as EntitySummary,
-  EntitySummaryProps,
-} from './layouts/EntitySummary';
+  default as EntityProfileHeader,
+  EntityProfileHeaderProps,
+} from './layouts/EntityProfileHeader';
 export {
   default as EntityTable,
   EntityTableProps,

@@ -9,7 +9,7 @@ type tabType = {
   title: string;
 };
 
-export interface EntityDetailsWrapperProps {
+export interface EntityWrapperProps {
   tabs: tabType[];
   onClickTab: (val: any) => void;
   selectedTab: string;
@@ -19,7 +19,7 @@ export interface EntityDetailsWrapperProps {
   onClickContinue?: (v: any) => void;
 }
 
-const EntityDetailsWrapper: ParentFC<EntityDetailsWrapperProps> = ({
+const EntityDetails: ParentFC<EntityWrapperProps> = ({
   children,
   tabs,
   onClickTab,
@@ -81,4 +81,4 @@ const EntityDetailsWrapper: ParentFC<EntityDetailsWrapperProps> = ({
   );
 };
 
-export default EntityDetailsWrapper;
+export default EntityDetails;

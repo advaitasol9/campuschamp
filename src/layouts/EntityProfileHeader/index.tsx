@@ -32,7 +32,7 @@ type entityDetails = {
   badges: badge[];
 };
 
-export interface EntitySummaryProps {
+export interface EntityProfileHeaderProps {
   entityDetails: entityDetails;
   sessions: session[];
   onPressDownload?: () => void;
@@ -40,13 +40,13 @@ export interface EntitySummaryProps {
   onPressDelete?: () => void;
 }
 
-const EntitySummary = ({
+const EntityProfileHeader = ({
   sessions,
   entityDetails: { id, name, img, badges },
   onPressDownload = () => {},
   onPressEdit = () => {},
   onPressDelete = () => {},
-}: EntitySummaryProps) => {
+}: EntityProfileHeaderProps) => {
   const [session, setSession] = useState(sessions[0]);
   const [visibleBadgeName, setVisibleBadgeName] = useState('');
 
@@ -154,4 +154,4 @@ const EntitySummary = ({
   );
 };
 
-export default EntitySummary;
+export default EntityProfileHeader;

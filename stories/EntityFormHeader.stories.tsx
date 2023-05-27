@@ -1,10 +1,10 @@
 import { Meta, Story } from '@storybook/react';
 import React from 'react';
-import { EntityStaticDetails, EntityStaticDetailsProps } from '../src';
+import { EntityFormHeader, EntityFormHeaderProps } from '../src';
 
 const meta: Meta = {
-  title: 'EntityStaticDetails',
-  component: EntityStaticDetails,
+  title: 'EntityFormHeader',
+  component: EntityFormHeader,
   argTypes: {
     children: {
       control: {
@@ -19,8 +19,8 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<EntityStaticDetailsProps> = (args) => (
-  <EntityStaticDetails {...args} />
+const Template: Story<EntityFormHeaderProps> = (args) => (
+  <EntityFormHeader {...args} />
 );
 
 export const Default = Template.bind({});

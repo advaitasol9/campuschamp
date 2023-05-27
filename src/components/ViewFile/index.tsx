@@ -8,15 +8,20 @@ import { AiOutlineEye } from 'react-icons/ai';
 import classNames from 'classnames';
 import { Button } from 'appfactory.react.web';
 
-export type Props = {
+export type ViewFileProps = {
   label?: string;
   file: file;
   error?: string;
-  size?: "small" | "large";
+  size?: 'small' | 'large';
   className?: string;
 };
 
-const ViewFile = ({ label, file, size = 'large', className }: Props) => {
+const ViewFile = ({
+  label,
+  file,
+  size = 'large',
+  className,
+}: ViewFileProps) => {
   // const { t } = useTranslation();
 
   const viewbtn = () => (

@@ -15,6 +15,8 @@ export {
   default as PageHeader,
   PageHeaderProps,
 } from './components/PageHeader';
+export { default as FileInput, FileInputProps } from './components/FileInput';
+export { default as ViewFile, ViewFileProps } from './components/ViewFile';
 
 export { default as Dashboard, DashboardProps } from './layouts/Dashboard';
 export { default as Footer, FooterProps } from './layouts/Footer';

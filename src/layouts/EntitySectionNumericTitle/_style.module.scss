@@ -1,0 +1,22 @@
+@import '../../scss/config';
+
+.entity-section-numeric-title {
+  @extend %row-start;
+  gap: 8.33px;
+  .index-wrapper {
+    height: 26.25px;
+    width: 26.25px;
+    border-radius: 50%;
+    background-color: $blue;
+    @extend %all-center;
+
+    .index {
+      @extend %semi16p;
+      color: $white;
+    }
+  }
+  .title {
+    @extend %semi16p;
+    color: $dark-text;
+  }
+}

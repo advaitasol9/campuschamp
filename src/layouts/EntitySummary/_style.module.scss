@@ -1,0 +1,126 @@
+@import '../../scss/config';
+
+.entity-summary {
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  background-color: $white;
+  overflow: hidden;
+  height: 146.7px;
+  margin-bottom: 17.28px;
+
+  .entity {
+    background-image: url('../../assets/img/gradientTileMd.png');
+    background-size: cover;
+    @extend %row-start;
+    padding: 0px 18.5px 0px;
+    width: 27%;
+    gap: 11px;
+
+    .image {
+      box-sizing: border-box;
+      background: #d9d9d9;
+      border: 5px solid #f3f9ff;
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      display: flex;
+      @extend %all-center;
+      img {
+        width: 79px;
+        height: 79px;
+      }
+    }
+
+    .details {
+      .name {
+        @extend %semi18p;
+        color: $white;
+      }
+      .id {
+        @extend %reg16p;
+        color: $white;
+        // margin-top: 5px;
+      }
+      .badges {
+        @extend %row-start;
+        gap: 8px;
+        margin-top: 10px;
+
+        .badge {
+          padding: 4.5px 8px;
+          border-color: $white;
+          border-radius: 3px;
+          gap: 2px;
+          p {
+            @extend %reg12p;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  .session {
+    padding: 0px 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14.84px;
+    position: relative;
+    width: 100%;
+    .ddn {
+      .ddn-toggle {
+        @extend %row-start;
+        gap: 2px;
+        color: $blue;
+        cursor: pointer;
+
+        .id {
+          @extend %semi14p;
+          color: $blue;
+        }
+      }
+      .ddn-menu {
+        padding: 6px 0px;
+        .ddn-menu-item {
+          padding: 6px 8px;
+          p {
+            @extend %reg14p;
+            color: $dark-text;
+          }
+        }
+      }
+    }
+
+    .session-details {
+      @extend %row-start;
+      gap: 20px;
+      .entity-details {
+        background-color: $bg-color;
+        height: 70px;
+        width: 182.35px;
+
+        p {
+          @extend %semi16p;
+          color: $dark-text;
+        }
+      }
+    }
+    .actions {
+      @extend %row-start;
+      gap: 15px;
+      position: absolute;
+      top: 19.05px;
+      right: 20.65px;
+
+      .download {
+        padding: 0px;
+        p {
+          @extend %semi14p;
+          color: $blue;
+        }
+      }
+    }
+  }
+}

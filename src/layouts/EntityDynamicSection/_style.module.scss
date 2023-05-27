@@ -1,0 +1,65 @@
+@import '../../scss/config';
+
+.entity-dynamic-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f9fc;
+  border-radius: 5px;
+  padding: 15.16px 0px;
+  width: 100%;
+  .title {
+    @extend %row-start;
+    margin-bottom: 14.5px;
+    padding: 0px 20px;
+    p {
+      @extend %semi18p;
+      color: $dark-text;
+    }
+  }
+  .body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .rowContainer {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      .break {
+        height: 1px;
+        background-color: $border-color;
+        margin: 10px 0px;
+        width: 100%;
+      }
+      .wrapper {
+        @extend %row-start;
+        padding: 0px 20px;
+        align-items: flex-start;
+
+        .item {
+          display: flex;
+          flex-direction: column;
+          width: 25%;
+          gap: 5px;
+          .label {
+            @extend %reg14p;
+            color: $light-text2;
+          }
+
+          .value {
+            @extend %semi16p;
+            color: $dark-text;
+          }
+          .view-file {
+            width: calc(100% - 19px);
+          }
+          .view-file-small {
+            margin-top: 22px;
+            width: calc(100% - 19px);
+          }
+        }
+      }
+    }
+  }
+}

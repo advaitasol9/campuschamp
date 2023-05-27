@@ -1,0 +1,30 @@
+@import '../../scss/config';
+
+.entity-section {
+  width: 100%;
+  padding: 29.5px 0px;
+  @extend %column-start;
+  align-items: flex-start;
+  border-bottom: 1px solid $border-color;
+  .title {
+    @extend %semi18p;
+    color: $dark-text;
+    margin-bottom: 15px;
+    .sub-title {
+      @extend %reg16p;
+      color: $light-text2;
+    }
+  }
+}
+
+.entity-section-without-border {
+  border: none;
+}
+
+.entity-section-without-bottom-padding {
+  padding-bottom: 0px;
+}
+
+.entity-section-without-top-padding {
+  padding-top: 0px;
+}

@@ -1,0 +1,51 @@
+@import '../../../scss/config';
+
+.change-group-popover {
+  width: 339px;
+  box-sizing: border-box;
+  background-color: $white;
+  .header {
+    @extend %row-between;
+    border-bottom: 1px solid $border-color;
+    padding: 16.5px 20.5px 16.29px;
+
+    .text1 {
+      @extend %semi16p;
+      color: $dark-text;
+    }
+    .text2 {
+      @extend %semi14p;
+    }
+  }
+  .body {
+    padding: 17px 20.5px 10.5px;
+    max-height: 200px;
+    overflow: auto;
+    .group-list {
+      @extend %column-start;
+      gap: 18.5px;
+      align-items: flex-start;
+      margin-top: 17px;
+    }
+  }
+  .footer {
+    @extend %row-start;
+    gap: 12px;
+    padding: 8px 20.5px 20.5px;
+    .btn-outline {
+      border-color: $dark-text;
+      border-radius: 4px;
+      color: $dark-text;
+
+      p {
+        @extend %semi14p;
+      }
+    }
+    .btn-default {
+      border-radius: 4px;
+      p {
+        @extend %semi14p;
+      }
+    }
+  }
+}

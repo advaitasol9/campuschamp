@@ -1,0 +1,26 @@
+@import '../../scss/config';
+
+.entity-section-row-container {
+  @extend %column-start;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 15px;
+  .entity-section-row {
+    @extend %row-start;
+    align-items: flex-start;
+    gap: 7.5%;
+    width: 100%;
+  }
+
+  .title-wrapper {
+    margin-bottom: 10.01px;
+
+    .title {
+      @extend %semi14p;
+    }
+  }
+}
+
+.row-without-margin-top {
+  margin-top: 0;
+}

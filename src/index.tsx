@@ -6,32 +6,68 @@ export type {
   TableFiltersProps,
   TableFilterProps,
 } from './components/TableFilters';
+export {
+  default as PrimaryTable,
+  PrimaryTableProps,
+} from './components/PrimaryTable';
+export { default as TableStat, TableStatProps } from './components/TableStat';
+export {
+  default as PageHeader,
+  PageHeaderProps,
+} from './components/PageHeader';
 
-export { default as PrimaryTable } from './components/PrimaryTable';
-export type { PrimaryTableProps } from './components/PrimaryTable';
-
-export { default as TableStat } from './components/TableStat';
-export type { TableStatProps } from './components/TableStat';
-
-export { default as PageHeader } from './components/PageHeader';
-export type { PageHeaderProps } from './components/PageHeader';
-
-export { default as Dashboard } from './layouts/Dashboard';
-export type { DashboardProps } from './layouts/Dashboard';
-
-export { default as Footer } from './layouts/Footer';
-export type { FooterProps } from './layouts/Footer';
-
-export { default as Header } from './layouts/Header';
-export type { HeaderProps } from './layouts/Header';
-
-export { default as Navbar } from './layouts/Navbar';
-export type {
+export { default as Dashboard, DashboardProps } from './layouts/Dashboard';
+export { default as Footer, FooterProps } from './layouts/Footer';
+export { default as Header, HeaderProps } from './layouts/Header';
+export {
+  default as EntityDetailsWrapper,
+  EntityDetailsWrapperProps,
+} from './layouts/EntityDetailsWrapper';
+export {
+  default as EntityDynamicSection,
+  EntityDynamicSectionProps,
+} from './layouts/EntityDynamicSection';
+export {
+  default as EntitySection,
+  EntitySectionProps,
+} from './layouts/EntitySection';
+export {
+  default as EntitySectionNumericTitle,
+  EntitySectionNumericTitleProps,
+} from './layouts/EntitySectionNumericTitle';
+export {
+  default as EntitySectionRow,
+  EntitySectionRowProps,
+} from './layouts/EntitySectionRow';
+export {
+  default as EntityStaticDetails,
+  EntityStaticDetailsProps,
+} from './layouts/EntityStaticDetails';
+export {
+  default as EntitySummary,
+  EntitySummaryProps,
+} from './layouts/EntitySummary';
+export {
+  default as EntityTable,
+  EntityTableProps,
+} from './layouts/EntityTable';
+export {
+  default as Navbar,
   NavbarProps,
   NavbarItemProps,
   SelectedNavItemProps,
 } from './layouts/Navbar';
 
 export { handleTableFilterChange } from './utils/handleTableFilterChange';
+export {
+  handleCheckGroupInputInFormChange,
+  handleSelectInputInFormChange,
+  handlePrimaryInputInFormChange,
+  handleAddMoreDateChange,
+  handleAddMorePrimaryInputChange,
+  handleAddMoreSelectInputChange,
+  handleAddMoreFileChange,
+  handleAddMoreCheckGroupInputChange,
+} from './utils/handleInputChanges';
 
 export { default as tableStatBg } from './assets/img/tableStatBg.png';

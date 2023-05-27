@@ -1,0 +1,31 @@
+@import '../../scss/config';
+
+.entity-static-details {
+  @extend %row-start;
+  background-image: url('../../assets/img/gradientTileLg.png');
+  background-size: cover;
+  border-radius: 5px;
+  background-color: $blue;
+  width: 100%;
+  height: 84.31px;
+
+  .detail-with-left-border {
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .detail {
+    @extend %column-start;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 0px 3%;
+
+    .title {
+      @extend %reg14p;
+      color: $gray;
+    }
+    .value {
+      @extend %semi16p;
+      color: $white;
+    }
+  }
+}

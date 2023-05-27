@@ -12,6 +12,8 @@ const colors = {
   'light-text2': '#74839a',
   gray: '#ebebeb',
   'icon-bg-color': '#ebf6ff',
+  error: '#F66C6C',
+  border: '#dce1e9',
 };
 
 export default colors;

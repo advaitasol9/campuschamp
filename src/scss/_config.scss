@@ -10,6 +10,8 @@ $icon: #4b5b74;
 $light-text2: #74839a;
 $gray: #ebebeb;
 $icon-bg-color: #ebf6ff;
+$border-color: #dce1e9;
+$error: #ff9494;
 
 p {
   margin: 0;
@@ -156,11 +158,27 @@ h1 {
 
 %row-start {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+%column-between {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+%column-start {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 }
 
 %all-center {
+  display: flex;
   justify-content: center;
   align-items: center;
 }

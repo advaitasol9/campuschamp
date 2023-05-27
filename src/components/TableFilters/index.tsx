@@ -62,7 +62,7 @@ const TableFilters = ({
               <CheckInput
                 type="checkbox"
                 checked={item.selected}
-                onChange={event => handleChange(event, idx)}
+                onChange={(event) => handleChange(event, idx)}
                 label={item.item}
                 className={classes['select-input']}
               />
@@ -73,7 +73,7 @@ const TableFilters = ({
       {data.length > (page + 1) * 5 && (
         <div
           className={classes['view-more']}
-          onClick={() => setPage(page => page + 1)}
+          onClick={() => setPage((page) => page + 1)}
         >
           <p>View More</p>
           <FaAngleDown color={colors.blue} size={'14px'} />

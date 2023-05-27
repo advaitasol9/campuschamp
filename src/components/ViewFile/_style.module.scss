@@ -1,0 +1,36 @@
+@import '../../scss/config';
+
+.view-file {
+  @extend %column-start;
+  align-items: flex-start;
+  width: 100%;
+
+  .row {
+    @extend %row-between;
+    height: 47.33px;
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #dce1e9;
+    border-radius: 5px;
+    padding: 0px 17.71px;
+    box-sizing: border-box;
+    .label {
+      @extend %semi14p;
+      color: $dark-text;
+      margin-bottom: 10.01px;
+    }
+    .file-name {
+      @extend %row-start;
+      gap: 10.29px;
+      p {
+        @extend %reg14p;
+        color: $dark-text;
+      }
+    }
+  }
+}
+
+.view-btn-text {
+  @extend %semi16p;
+  color: $blue;
+}

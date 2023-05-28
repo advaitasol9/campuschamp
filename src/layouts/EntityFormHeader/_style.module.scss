@@ -2,8 +2,6 @@
 
 .entity-static-details {
   @extend %row-start;
-  background-image: url('../../assets/img/gradientTileLg.png');
-  background-size: cover;
   border-radius: 5px;
   background-color: $blue;
   width: 100%;

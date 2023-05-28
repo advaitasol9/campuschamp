@@ -1,6 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'appfactory.react.web/dist/appfactory.react.web.cjs.production.min.css';
 
+export type { ParentFC } from './types';
+
 export { default as TableFilters } from './components/TableFilters';
 export type {
   TableFiltersProps,

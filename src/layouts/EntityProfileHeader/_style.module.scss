@@ -10,8 +10,7 @@
   margin-bottom: 17.28px;
 
   .entity {
-    background-image: url('../../assets/img/gradientTileMd.png');
-    background-size: cover;
+    background-color: $blue;
     @extend %row-start;
     padding: 0px 18.5px 0px;
     width: 27%;

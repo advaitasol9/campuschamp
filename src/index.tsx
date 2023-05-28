@@ -73,5 +73,3 @@ export {
   handleAddMoreFileChange,
   handleAddMoreCheckGroupInputChange,
 } from './utils/handleInputChanges';
-
-export { default as tableStatBg } from './assets/img/tableStatBg.png';

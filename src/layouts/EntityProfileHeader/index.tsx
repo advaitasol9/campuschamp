@@ -8,6 +8,7 @@ import { Dropdown, OverlayTrigger } from 'react-bootstrap';
 import { AiOutlineEdit } from 'react-icons/ai';
 import { BsDownload, BsTrash } from 'react-icons/bs';
 import classes from './_style.module.scss';
+import classNames from 'classnames';
 
 type badge = {
   name: string;
@@ -38,6 +39,7 @@ export interface EntityProfileHeaderProps {
   onPressDownload?: () => void;
   onPressEdit?: () => void;
   onPressDelete?: () => void;
+  className?: string;
 }
 
 const EntityProfileHeader = ({
@@ -46,6 +48,7 @@ const EntityProfileHeader = ({
   onPressDownload = () => {},
   onPressEdit = () => {},
   onPressDelete = () => {},
+  className,
 }: EntityProfileHeaderProps) => {
   const [session, setSession] = useState(sessions[0]);
   const [visibleBadgeName, setVisibleBadgeName] = useState('');
@@ -53,7 +56,7 @@ const EntityProfileHeader = ({
   const target = useRef(null);
 
   return (
-    <div className={classes['entity-summary']}>
+    <div className={classNames(classes['entity-summary'], className)}>
       <div className={classes.entity}>
         <div className={classes.image}>
           <img src={img} alt={'profile_photo'} />

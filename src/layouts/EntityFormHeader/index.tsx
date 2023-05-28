@@ -10,11 +10,12 @@ type detailsType = {
 
 export interface EntityFormHeaderProps {
   details: detailsType[];
+  className?: string;
 }
 
-const EntityFormHeader = ({ details }: EntityFormHeaderProps) => {
+const EntityFormHeader = ({ details, className }: EntityFormHeaderProps) => {
   return (
-    <div className={classes['entity-static-details']}>
+    <div className={classNames(classes['entity-static-details'], className)}>
       {details.map((details: detailsType, idx: number) => (
         <div
           className={classNames(classes['detail'], {

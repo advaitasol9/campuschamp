@@ -28,34 +28,4 @@
       }
     }
   }
-  .footer {
-    width: 100%;
-    height: 86px;
-    background-color: #f7f9fc;
-    border-radius: 5px;
-    @extend %row-between;
-    padding: 0px 20.8px;
-
-    .right-row {
-      @extend %row-start;
-      gap: 15px;
-    }
-
-    .btn {
-      padding: 10px 24px;
-      border-radius: 4px;
-
-      p {
-        @extend %reg14p;
-      }
-    }
-
-    .btn-outline {
-      border-color: $dark-text;
-
-      p {
-        color: $dark-text;
-      }
-    }
-  }
 }

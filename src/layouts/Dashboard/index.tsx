@@ -1,5 +1,5 @@
 import React from 'react';
-// import Footer from '../Footer';
+import Footer from '../Footer';
 import Header, { HeaderProps } from '../Header';
 import NavBar, { NavbarProps } from '../Navbar';
 import classes from './_style.module.scss';
@@ -27,7 +27,7 @@ const Dashboard = ({ children, header, navbar }: DashboardProps) => {
         </div> */}
         {children}
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

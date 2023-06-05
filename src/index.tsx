@@ -28,6 +28,10 @@ export {
   EntityWrapperProps,
 } from './layouts/EntityWrapper';
 export {
+  default as EntityFormActions,
+  EntityFormActionsProps,
+} from './layouts/EntityFormActions';
+export {
   default as EntityDynamicSection,
   EntityDynamicSectionProps,
 } from './layouts/EntityDynamicSection';

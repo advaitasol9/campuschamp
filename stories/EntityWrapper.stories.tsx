@@ -6,6 +6,7 @@ import {
   EntityWrapperProps,
   EntitySection,
   EntitySectionRow,
+  EntityFormActions,
 } from '../src';
 
 const meta: Meta = {
@@ -44,18 +45,25 @@ Default.args = {
   onClick: () => {},
   selectedTab: 'student_details',
   children: (
-    <EntitySection title="Enter Student Details" noPaddingTop>
-      <EntitySectionRow noMarginTop>
-        <PrimaryInput
-          label={'h_street_building'}
-          placeholder={'enter address'}
-        />
-        <PrimaryInput label={'city'} placeholder={'enter city'} />
-      </EntitySectionRow>
-      <EntitySectionRow>
-        <PrimaryInput label={'taluk'} placeholder={'enter taluk'} />
-        <PrimaryInput label={'pincode'} placeholder={'enter pincode'} />
-      </EntitySectionRow>
-    </EntitySection>
+    <>
+      <EntitySection
+        title="Enter Student Details"
+        noPaddingTop
+        hideBottomBorder
+      >
+        <EntitySectionRow noMarginTop>
+          <PrimaryInput
+            label={'h_street_building'}
+            placeholder={'enter address'}
+          />
+          <PrimaryInput label={'city'} placeholder={'enter city'} />
+        </EntitySectionRow>
+        <EntitySectionRow>
+          <PrimaryInput label={'taluk'} placeholder={'enter taluk'} />
+          <PrimaryInput label={'pincode'} placeholder={'enter pincode'} />
+        </EntitySectionRow>
+      </EntitySection>
+      <EntityFormActions />
+    </>
   ),
 };
